@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS artists (
   href          TEXT NOT NULL,
   name          TEXT NOT NULL,
   uri           TEXT NOT NULL,
-  genres        JSON NOT NULL
+  genres        JSON
 );
 
 CREATE TABLE IF NOT EXISTS artist_images (
