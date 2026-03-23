@@ -92,7 +92,7 @@ func (sa *Auth) finalizeAuth() echo.HandlerFunc {
 		}
 
 		// use the token to get an authenticated client
-		client, err := sa.createClient(ctx, tok)
+		client, err := sa.createClient(context.Background(), tok)
 		if err != nil {
 			utils.Logger.Fatal("failed creating client", zap.Error(err))
 		}
