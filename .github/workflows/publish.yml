@@ -29,7 +29,7 @@ jobs:
           cloud-token: ${{ secrets.DAGGER_CLOUD_TOKEN }}
         env:
           DOCKER_REGISTRY: ghcr.io
-          DOCKER_IMAGE_NAME: ${{ github.repository }}
+          DOCKER_IMAGE_NAME: analogio/spotify-viewer
           DOCKER_USERNAME: ${{ github.actor }}
           DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
           DOCKER_TAG: ${{ github.sha }}
