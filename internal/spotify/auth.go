@@ -38,7 +38,7 @@ func generateRandomState() (string, error) {
 }
 
 func newAuth(config *utils.Config, token *oauth2.Token, tokenSaveFunc func(*oauth2.Token) error) *Auth {
-	redirectURL := fmt.Sprintf("http://%s/callback", config.GetURL())
+	redirectURL := "https://whatsplaying.analogio.dk/callback"
 
 	auth := spotifyAuth.New(
 		spotifyAuth.WithRedirectURL(redirectURL),
